@@ -55,11 +55,8 @@ height: 50px;
 margin: 6px;
 }
 
-header nav {
-position: relative;
-}
 
-headre nav{
+header nav ul{
     position: relative;
 display: flex;
 }
@@ -75,9 +72,27 @@ font-size: 1.1 rem;
 text-decoration: none;
 }
 
-
-hover nav ul li a: hover {
-color:var (--color-secondaire)
-
+header nav ul a:hover {
+    color: var(--couleur-secondaire);
 }
 
+/* SECTION PRINCIPAL */
+section {
+    position: relative;
+display: flex;justify-content: space-between;
+align-items: center;
+min-height: 100vh;
+padding: 0 100px;
+}
+
+section .contentBox {
+position: relative;
+min-width: 600px;
+z-index: 1000;
+}
+
+section .contentBox h2{
+    font-size: 3.75rem;
+    color: var(--couleur-titre);
+    text-transform: uppercase;
+}
