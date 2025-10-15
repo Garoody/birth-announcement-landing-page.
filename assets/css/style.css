@@ -65,7 +65,7 @@ header nav ul  li {
 list-style: none;
 }
 
-
+/* 
 header nav ul li a {
     color: var(--couleur-titre);
 font-size: 1.1 rem;
@@ -74,7 +74,18 @@ text-decoration: none;
 
 header nav ul a:hover {
     color: var(--couleur-secondaire);
+} */
+
+header nav ul li a{
+    background: var(--couleur-secondaire);
+color: var(--couleur-titre);
+font-size: 1 .25rem;
+letter-spacing: 2px;
+padding: 15px 35px;
+text-decoration: none;
+border-radius: 40px;
 }
+
 
 /* SECTION PRINCIPAL */
 section {
@@ -96,3 +107,89 @@ section .contentBox h2{
     color: var(--couleur-titre);
     text-transform: uppercase;
 }
+section .contentBox p {
+    font-size: 1.1rem;
+    color: var(--couleur-titre);
+}
+section .contentBox .countDown {
+display: flex;
+margin: 20px 0;
+}
+section .contentBox .countDown .time
+{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: var(--couleur-titre);
+margin-right: 20px;
+font-size: 3rem;
+min-width: 110px;
+font-weight: 700;
+padding: 10px 5px 15px;
+border-radius: 4px;
+color: var(--couleur-secondaire);
+}
+
+
+
+section .contentBox .countDown .time span{
+margin-top: -10px;
+font-size: 1.25rem;
+font-weight: 600;
+color: var(--couleur-principal);
+}
+
+section .contentBox a {
+    position: relative;
+margin-top: 10px;
+display: inline-block;
+background: var(--couleur-secondaire);
+color: var(--couleur-titre);
+font-size: 1 .25rem;
+letter-spacing: 2px;
+padding: 15px 35px;
+text-decoration: none;
+border-radius: 40px;
+}
+
+
+
+
+section .imgBox img {
+    position: relative;
+max-width: 900px;
+width: 100%;
+margin-top: 100px;
+z-index: 2;
+}
+
+section .wave {
+    position: absolute;
+bottom: 0;
+right: 0;
+z-index: 1;
+pointer-events: none;
+}
+
+ /* NEWSLETTER */
+
+.newsletter {
+position: fixed;
+top: 50%;
+left:  50%;
+width: 600px;
+padding: 60px;
+background: var(--couleur-titre);
+z-index: 10000;
+box-shadow: 0 0 0 100vh rgba(49, 39, 71, 0.95);
+transform: translate(-50%, -50%) ;
+-webkit-transform:translate(-50%, -50%);
+/* visibility: hidden;
+opacity: 0; */
+}
+.newsletter.active {
+    visibility: visible;
+    opacity: 1;
+}
+
