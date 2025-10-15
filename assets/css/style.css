@@ -1,0 +1,83 @@
+/* Police */
+
+@import url(https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&display=swap%27);
+
+/* COLOR VARIABLE */
+:root {
+    --couleur-principal: #c0c7d6;
+    --couleur-secondaire: #57bab7;
+    --couleur-titre: #EDF2F7;
+    --couleur-alt: #718096;
+}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+
+body {
+    background: var(--couleur-principal);
+}
+
+/* header */
+header {
+    position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 9999; 
+}
+
+
+header .logo {
+    position: relative;
+display: flex;
+align-items: center;
+color: var (var(--couleur-titre));
+font-size: 1.8rem;
+text-decoration: none;
+font-weight: 600;
+}
+
+
+header .logo .logo__img{
+    width: 50px;
+height: 50px;
+margin: 6px;
+}
+
+header nav {
+position: relative;
+}
+
+headre nav{
+    position: relative;
+display: flex;
+}
+
+header nav ul  li {
+list-style: none;
+}
+
+
+header nav ul li a {
+    color: var(--couleur-titre);
+font-size: 1.1 rem;
+text-decoration: none;
+}
+
+
+hover nav ul li a: hover {
+color:var (--color-secondaire)
+
+}
+
