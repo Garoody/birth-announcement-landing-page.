@@ -272,11 +272,10 @@ text-decoration: underline;
 color: var(--couleur-principal);
 }
  
-/* RESPONSIVE */
+
+/* The responsive part */
 
 /* Using MiN-WIDTH / Utilisation et min-width */
-
-
 
 /* Extra small devices (portrait phones, Less than 320px) */
  @media (max-width: 380.98px) {
@@ -290,8 +289,8 @@ header nav {
 }
 header nav ul li a {
     font-size: 0.75rem;
-    letter-spacing: 1.5px;
-    padding: 12px 8px;
+    letter-spacing: 1px;
+    padding: 10px 5px;
 }
 
 /* MAIN SECTION */
@@ -300,6 +299,12 @@ section {
     padding-top: 160px;
     height: auto;
 }
+section .contentBox {
+display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 section .contentBox h2 {
  font-size: 1.6rem;
 text-align: center;
@@ -343,7 +348,6 @@ bottom: 45px;
 section .wave {
     width: 870px;
 }
-
 /* newsletter */
 .newsletter {
 width: 80%;
@@ -354,13 +358,11 @@ text-align: center;
 font-size: 1.5rem;
 line-height: 1;
 }
-
 .newsletter .newsletter__tittle p {
 font-size: 0.95rem;
 line-height: 1;
 margin-top: 10px;
 }
-
 .newsletter .newsletter__form input {
 width: 80%;
 font-size: 0.9rem;
@@ -369,7 +371,6 @@ font-size: 0.9rem;
     margin-top: 10px;
     width: 80%;
 }
-
 .newsletter .close {
 top: 10px;
 right: 10px;
@@ -380,11 +381,10 @@ height: 25px;
 footer {
     font-size: 0.85rem;
 }
-
  }
 
 /* Small devices (landscape phones, 576px and up) */
- @media  (min-width: 381px) and  (max-width:575.98px) {
+ @media  (min-width: 381px) and  (max-width:575.98px) {  
 
   /* HEADER */
 header
@@ -401,29 +401,20 @@ header nav ul li a {
     padding: 12px 8px;
 }
  
-
-
 /* MAIN SECTION */
 section {
     flex-direction: column;
     padding-top: 180px;
     height: auto;
 }
-
-
 section .contentBox {
 display: flex;
 flex-direction: column;
 align-items: center;
 }
-
-
-
-
 section .contentBox h2 {
  font-size: 2.5rem;
 text-align: center;
-
  }
  section .contentBox p {
  font-size: 1.5rem;
@@ -439,7 +430,6 @@ section .contentBox .countDown .time {
     margin-top: 10px;
     margin-right: 0px;
     font-size: 3rem;
-    
 }
 section .contentBox .countDown .time span {
     font-size: 1.2rem;
@@ -454,23 +444,166 @@ font-size: 1.25rem;
 letter-spacing: 1.5px;
 padding: 15px;
 }
+
 section .imgBox img {
 margin-top: 0;
     width: 300px;
 bottom: 45px;
 }
+
 section .wave {
     width: 870px;
 }
+
+/* newsletter */
+.newsletter {
+width: 80%;
+padding: 30px;
+text-align: center;
+}
+.newsletter .newsletter__tittle h2 {
+font-size: 1.5rem;
+line-height: 1;
+}
+.newsletter .newsletter__tittle p {
+font-size: 0.95rem;
+line-height: 1;
+margin-top: 10px;
+}
+.newsletter .newsletter__form input {
+width: 80%;
+font-size: 0.9rem;
+}
+.newsletter .newsletter__form input [type="submit"]{
+    margin-top: 10px;
+    width: 80%;
+}
+.newsletter .close {
+top: 10px;
+right: 10px;
+width: 25px;
+height: 25px;
 }
 
+}
 
 /* Small devices (landscape phones, 576px and up) */
  @media  (min-width: 576px) and  (max-width:767.98px) {
+  /* HEADER */
+header { flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+}
+header nav {
+    margin-top: 20px;
+}
+header nav ul li a {
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    padding: 12px 8px;
+}
+
+/* MAIN SECTION */
+section {
+    flex-direction: column;
+    padding-top: 180px;
+    height: auto;
+}
+section .contentBox {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+section .contentBox h2 {
+ font-size: 2.5rem;
+text-align: center;
+ }
+ section .contentBox p {
+ font-size: 1.5rem;
+text-align: center;
+margin-top: 10px;
+ }
+ section .contentBox .countDown {
+flex-direction: column;
+justify-content: center;
+align-items: center;
+ }
+section .contentBox .countDown .time {
+    margin-top: 10px;
+    margin-right: 0px;
+    font-size: 3rem;
+}
+section .contentBox .countDown .time span {
+    font-size: 1.2rem;
+}
+section .contentBox a {
+width: 200px;
+margin-top: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.25rem;
+letter-spacing: 1.5px;
+padding: 15px;
+}
+
+section .imgBox img {
+margin-top: 0;
+    width: 300px;
+bottom: 45px;
+}
+
+section .wave {
+    width: 870px;
+}
+
+/* newsletter */
+
+.newsletter .newsletter__tittle h2 {
+font-size: 2rem;
+}
+.newsletter .newsletter__tittle p {
+font-size: 1.5rem;
+margin-top: 10px;
+}
  }
 
  /* Medium devices (tablets, 768px and up) */
  @media  (min-width: 768px) and  (max-width: 991.98px) {
+/* HEADER */
+header nav ul li a {
+font-size: 1.5rem;
+letter-spacing: 1.5px;
+padding: 12px 8px;
+}
+/* MAIN SECTION */
+
+    section {
+flex-direction: column;
+padding-top: 130px;
+height: auto;
+}
+section .contentBox {
+margin-bottom: 0px;
+}
+ section .contentBox a {
+font-size: 4rem;
+ }
+ section .contentBox h2 {
+width: 200px;
+margin-top: 0px;
+margin-bottom: 0px;
+display: flex;
+justify-content: center;
+font-size: 1.25rem;
+letter-spacing: 1.5px;
+padding: 15px;
+ }
+
+
+
+
+
  }
 
  /* Large devices (desktops, 992px and up) */
