@@ -4,10 +4,11 @@
 
 /* COLOR VARIABLE */
 :root {
-    --couleur-principal: #c0c7d6;
-    --couleur-secondaire: #57bab7;
-    --couleur-titre: #EDF2F7;
-    --couleur-alt: #718096;
+    --couleur-principal: #5881da;
+    --couleur-secondaire: #5e4972;
+    --couleur-titre: #ecdde2;
+    --couleur-alt: #c79a47;
+    
 }
 
 /* GENERAL */
@@ -21,7 +22,7 @@
 
 
 body {
-    background: var(--couleur-principal);
+    background: var(--couleur-principal)
 }
 
 /* header */
@@ -46,6 +47,7 @@ color: var (var(--couleur-titre));
 font-size: 1.8rem;
 text-decoration: none;
 font-weight: 600;
+
 }
 
 
@@ -156,10 +158,11 @@ border-radius: 40px;
 
 section .imgBox img {
     position: relative;
-max-width: 900px;
+max-width: 400px;
 width: 100%;
-margin-top: 100px;
+margin-top: 0px;
 z-index: 2;
+border-radius: 90%;
 }
 
 section .wave {
