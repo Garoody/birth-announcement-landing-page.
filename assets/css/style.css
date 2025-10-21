@@ -22,7 +22,9 @@
 
 
 body {
-    background: var(--couleur-principal)
+    background-image: url(./../../img/section/femme.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* header */
@@ -293,7 +295,9 @@ header nav {
 header nav ul li a {
     font-size: 0.75rem;
     letter-spacing: 1px;
-    padding: 10px 5px;
+    padding: 10px 10px;
+    position: relative;
+    top: -20px;
 }
 
 /* MAIN SECTION */
@@ -339,13 +343,15 @@ margin-top: 0px;
 display: flex;
 justify-content: center;
 align-items: center;
-font-size: 0.85rem;
+font-size: 0.65rem;
 letter-spacing: 1px;
 padding: 15px;
+ position: relative;
+    top: -10px;
 }
 section .imgBox img {
 margin-top: 0;
-    width: 300px;
+    width: 200px;
 bottom: 45px;
 }
 section .wave {
