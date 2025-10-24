@@ -8,6 +8,8 @@
     --couleur-secondaire: #ded9e4;
     --couleur-titre: #34368d;
     --couleur-alt: #c79a47;
+    --couleur-footer: #080805;
+    
 
 }
 
@@ -267,7 +269,7 @@ footer .copy {
     position: absolute;
     bottom: 30px;
     bottom: 30px;
-    color: var(--couleur-titre);
+    color: var(--couleur-footer);
     z-index: 1000;
 }
 
@@ -308,10 +310,6 @@ footer .copy a:hover {
         position: relative;
         top: -20px;
     }
-
-
-
-
 
     /* MAIN SECTION */
     section {
@@ -535,8 +533,9 @@ footer .copy a:hover {
         width: 25px;
         height: 25px;
     }
-
 }
+
+
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -634,24 +633,21 @@ footer .copy a:hover {
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
     body {
-        background-image: url(../../img/section/femme\ 768jpg.jpg);
-
+        background-image: url(../../img/section/femme-768jpg.jpg);
     }
 
     /* HEADER */
     header nav ul li a {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         letter-spacing: 1.5px;
         padding: 12px 8px;
-        object-fit: cover;
-        height: auto;
     }
 
     /* MAIN SECTION */
 
     section {
         flex-direction: column;
-        padding-top: 200px;
+        padding-top: 130px;
         height: auto;
     }
 
@@ -660,8 +656,7 @@ footer .copy a:hover {
     }
 
     section .contentBox h2 {
-        font-size: 5rem;
-        margin-bottom: 0px;
+        font-size: 4rem; 
     }
 
     section .contentBox a {
@@ -670,16 +665,16 @@ footer .copy a:hover {
         margin-bottom: 0px;
         display: flex;
         justify-content: center;
+        align-items: center;
         font-size: 1.25rem;
         letter-spacing: 1.5px;
         padding: 15px;
     }
 
     section .imgBox img {
-        margin: 700px;
-        margin-top: 200px;
-        width: 700px;
-    margin-bottom: 50px;
+        width: 300px;
+    margin-bottom: 100px;
+    
     }
 
     section .wave {
@@ -688,13 +683,9 @@ footer .copy a:hover {
 
     /* FOOTER */
     footer {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
-
 }
-
-
-
 
 
 /* Large devices (desktops, 992px and up) */
