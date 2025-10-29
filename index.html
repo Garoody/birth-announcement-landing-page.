@@ -104,17 +104,28 @@ Entre Lauryne et Garoody, un doux secret se prépare à éclore.
     </section>
 
     <!-- Newsletter -->
-     <section class="newsletter">
+     <section id="newsletter" class="newsletter active">
         <div class="newsletter__tittle">
             <h2>Rester connectés</h2>
             <p>Soyez informé du lancement</p>
         </div>
         <!-- Formulaire d'abonnement à la newsletter -->
         <div class=" newsletter__form ">
-            <form action="">
-                <input type="email" name="" placeholder="*votre@email.com" required>
-                <input type="submit" value="M'abonner">
+
+
+
+
+            <form action="" method="" enctype="" aria-label="Formulaire d'inscription à la newsletter">
+                <label for="email">Votre adresse email</label>
+                <input type="email" id="email" name="email" placeholder="*votre@email.com" required aria-required="true" autocomplete="email">
+           <div class="consent-checkbox">
+            <input type="checkbox" name="consent" id="consent" required>
+            <label for="consent">j'accepte de recevoir la newsletter et j'ai lu la politique de confidentialité</label>
+           </div>
+           <button type="submit">M'abonner</button>
             </form>
+
+
 
         </div>
         <!-- Politique de confidentialité RGPD -->
@@ -142,7 +153,7 @@ Entre Lauryne et Garoody, un doux secret se prépare à éclore.
     <!-- FOOTER -->
 
     <footer>
-        <div class="copy">Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2025-<span id="current_year">     </span>
+        <div class="copy">Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2025-<span id="current_year"></span>
         </div>
 
     </footer>
