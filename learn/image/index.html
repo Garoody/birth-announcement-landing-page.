@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASE HTML eco-friendly pour les images</title>
+</head>
+
+<body>
+    <!-- BONNE PRATIQUE / dimensions spécifiées, format moderne, lazy loading  -->
+<img 
+src="image-optimisee.webp" 
+alt="Description précise"
+width="800"
+height="600"
+loading="lazy"
+>
+<!-- X MAUVAISE PRATIQUE : dimensions non spécifiées, format lourd  -->
+<img src="image-non-optimisee.jpg" alt="Description">
+
+<!-- Image responsive avec la balise picture (multi-formats) -->
+
+<picture>
+<!-- Format le plus économe en priorité -->
+<source srcset="image.avif" type="image/avif">
+
+<!-- Format alternatif  bien supporté -->
+<source srcset="image.webp" type="image/webp">
+
+<!-- Solution de repli universelle -->
+
+<img 
+src="image.jpg" 
+alt="Description précise"
+width="800"
+height="600"
+loading="lazy"
+>
+</picture>
+
+<!-- Images responsives avec srcset (multi-tailles) -->
+
+<img src="image-800w.webp" 
+alt="Description précise" 
+sizes="(max-width; 600px) 400px, (max-width; 1200px) 800px, 1200px "
+ srcset="image-400w.webp 400w,image-800w.webp image-1200w.webp 1200w" 
+ width="800" 
+ height="600"
+loading="lazy">
+
+
+<!-- Combinaisons des deux approches (format + taille) -->
+
+<picture>
+<!-- AVIF en différent tailles -->
+<source  
+sizes="(max-width; 600px) 400px, (max-width; 1200px) 800px, 1200px" 
+srcset="image-400w.avif 400w,image-800w.avif image-1200w.avif 1200w" 
+type="image/"avif>
+<!-- WEBP en différent tailles -->
+<source  
+sizes="(max-width; 600px) 400px, (max-width; 1200px) 800px, 1200px" 
+srcset="image-400w.webp 400w,image-800w.webp image-1200w.webp" 
+type="image/"webp>
+
+<!-- JPEG en différent tailles -->
+<img  
+src="image-800w.jpeg"
+sizes="(max-width; 600px) 400px, (max-width; 1200px) 800px, 1200px" 
+srcset="image-400w.jpeg 400w,image-800w.jpeg image-1200w.jpeg 1200w" 
+alt="Description précise"
+width="800"
+height="600"
+loading="lazy">
+
+
+</picture>
+
+
+</body>
+</html>
