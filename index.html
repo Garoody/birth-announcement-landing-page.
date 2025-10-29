@@ -36,23 +36,27 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
-
 <body>
     <header>
+        <!-- LOGO du site wisepanda.fr -->
         <a href="#" class="logo">
             <img class="logo__img" src="./img/section/logo-femme.jpg" alt="logo de WisePanda.fr">
-            <span class="logo__text">Coming soon.fr</span>
+            <span class="logo__text">  
+                <h1>Coming soon.fr</h1></span>
         </a>
+        <!-- Premier bouton call-to-action -->
         <nav>
             <ul>
                 <li>
-                    <a class="b show__newsletter" href="#"> Prévenez-moi</a>
+                    <button  class="b show__newsletter" > Prévenez-moi</button>
                 </li>
             </ul>
         </nav>
 
 
     </header>
+
+    <main> 
     <!-- SECTION PRINCIPAL -->
     <section>
         <!-- IMAGE SVG WAVE -->
@@ -77,21 +81,21 @@ Entre Lauryne et Garoody, un doux secret se prépare à éclore.
             <!-- compteur de jours restant en javascript -->
             <div class="countDown">
                 <div class="time">
-                    <div class="day">220</div> <span>jour</span>
+                    <div id="jour" class="day">220</div> <span>jours</span>
                 </div>
                 <div class="time">
-                    <div class="hour">24</div> <span>heures</span>
+                    <div id="heure" class="hour">24</div> <span>heures</span>
                 </div>
                 <div class="time">
-                    <div class="minute">220</div> <span>minutes</span>
+                    <div id="minute" class="minute">220</div> <span>minutes</span>
                 </div>
 
                 <div class="time">
-                    <div class="second">45</div> <span>Secondes</span>
+                    <div id="seconde" class="second">45</div> <span>Secondes</span>
                 </div>
             </div>
             <!-- Deuxième bouton call-to-action -->
-            <a class="btn show__newsletter" href="#"> Prévenez-moi!</a>
+            <button class="btn show__newsletter" href="#"> Prévenez-moi!</button>
         </div>
         <!-- IMAGE du panda ramen -->
         <div class="imgBox">
@@ -100,12 +104,11 @@ Entre Lauryne et Garoody, un doux secret se prépare à éclore.
     </section>
 
     <!-- Newsletter -->
-    <div class="newsletter">
+     <section class="newsletter">
         <div class="newsletter__tittle">
             <h2>Rester connectés</h2>
             <p>Soyez informé du lancement</p>
         </div>
-
         <!-- Formulaire d'abonnement à la newsletter -->
         <div class=" newsletter__form ">
             <form action="">
@@ -125,13 +128,21 @@ Entre Lauryne et Garoody, un doux secret se prépare à éclore.
 
         </div>
         <!-- image pour la fermeture du formulaire -->
-        <img class="close show__newsletter" src="./img/section/close.png" alt="ima ge fermeture formulaire">
+    <button> <img class="close show__newsletter" src="./img/section/close.png" alt="ima ge fermeture formulaire"> </button>               
     </div>
+
+   </section>
+
+
+
+ </main>
+
+
 
     <!-- FOOTER -->
 
     <footer>
-        <div class="copy">Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2025
+        <div class="copy">Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2025-<span id="current_year">     </span>
         </div>
 
     </footer>
