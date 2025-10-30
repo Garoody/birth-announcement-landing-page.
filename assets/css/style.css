@@ -71,16 +71,6 @@ header nav ul li {
     list-style: none;
 }
 
-/* 
-header nav ul li a {
-    color: var(--couleur-titre);
-font-size: 1.1 rem;
-text-decoration: none;
-}
-
-header nav ul a:hover {
-    color: var(--couleur-secondaire);
-} */
 
 header nav ul li a {
     background: var(--couleur-secondaire);
@@ -167,7 +157,7 @@ section .imgBox img {
     position: relative;
     max-width: 400px;
     width: 100%;
-    margin-top: 0px;
+    margin-top: 130px;
     z-index: 2;
     border-radius: 90%;
 }
@@ -363,13 +353,11 @@ footer .copy a:hover {
         font-size: 0.65rem;
         letter-spacing: 1px;
         padding: 15px;
-        position: relative;
-        top: -10px;
     }
 
     section .imgBox img {
         margin-top: 50px;
-        width: 200px;
+        
         bottom: 45px;
     }
 
@@ -491,7 +479,6 @@ footer .copy a:hover {
 
     section .imgBox img {
         margin-top: 0;
-        width: 300px;
         bottom: 45px;
     }
 
@@ -725,8 +712,8 @@ footer .copy a:hover {
 
     section .imgBox img {
         margin-top: -55px;
-        margin-top: 500px;
-        width: 700px;
+        
+      
     }
 
     section .wave {
@@ -737,10 +724,7 @@ footer .copy a:hover {
     footer {
         font-size: 1.5rem;
     }
-
 }
 
 /* Extra Large devices (Large desktops, 1200px and up) */
 @media (min-width: 1200px) {}
-
-
