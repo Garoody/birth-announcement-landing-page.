@@ -4,172 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projet de page d'annonce de naissance responsive, conçu en HTML, CSS et JavaScript.">
+    <meta name="theme-color" content="#34368d">
+    <title>Annonce de naissance | Projet portfolio</title>
 
-    <!-- HTML Meta Tags -->
-    <title>WisePanda.fr |Formation de site web en ligne !</title>
-    <title>WisePanda.fr | formation création de site en ligne !</title>
-    <meta name="description"
-        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent ">
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://www.WisePanda.fr/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="WisePanda.fr | formation création de site en ligne !">
-    <meta property="og:description"
-        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent ">
-    <meta property="og:image" content="./img/og-wisepanda.fr.png">
+    <meta property="og:title" content="Annonce de naissance | Projet portfolio">
+    <meta property="og:description" content="Une landing page responsive conçue en HTML, CSS et JavaScript.">
 
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="WisePanda.fr">
-    <meta property="twitter:url" content="https://www.WisePanda.fr/">
-    <meta name="twitter:title" content="WisePanda.fr | formation création de site en ligne !">
-    <meta name="twitter:description"
-        content="WisePanda.fr est un site web dédié à la formation liée au monde du web. Créer votre business en ligne, améliorer vos compétences web gratuitement dès à présent ">
-    <meta name="twitter:image" content="img/og-wisepanda.fr.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Annonce de naissance | Projet portfolio">
+    <meta name="twitter:description" content="Une landing page responsive conçue en HTML, CSS et JavaScript.">
 
-    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./img/favicon/favicon.svg" type="image/x-icon">
-    <!-- css -->
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./assets/css/style.css">
-
 </head>
-<body>
-    <header>
-        <!-- LOGO du site wisepanda.fr -->
-        <a href="#" class="logo">
-            <img class="logo__img" src="./img/section/logo-femme.webp" alt="logo de WisePanda.fr"
-            width="128"
-            height="128"
-            loading="eager"
-            decoding="sync">
-            
-            <span class="logo__text">  
-                <h1>Coming soon.fr</h1></span>
+
+<body id="top">
+    <header class="site-header">
+        <a href="#top" class="brand" aria-label="Retour en haut de page">
+            <span class="brand__mark" aria-hidden="true">✦</span>
+            <span>Une petite étoile</span>
         </a>
-        <!-- Premier bouton call-to-action -->
-        <nav>
-            <ul>
-                <li>
-                    <button  class="b show__newsletter" > Prévenez-moi</button>
-                </li>
-            </ul>
-        </nav>
     </header>
 
-    <main> 
-    <!-- SECTION PRINCIPAL -->
-    <section>
-        <!-- IMAGE SVG WAVE -->
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="eyebrow">Projet portfolio · HTML, CSS et JavaScript</p>
+                <h1 id="hero-title">Une petite étoile est arrivée&nbsp;!</h1>
+                <p class="hero__message">
+                    Une landing page responsive pensée comme une annonce de naissance.<br>
+                    Elle met en avant une hiérarchie claire, un visuel optimisé et un compteur dynamique.<br>
+                    Les contenus personnels ont été anonymisés pour cette version publique.
+                </p>
 
-        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#00cba9" fill-opacity="1"
-                d="M0,64L48,74.7C96,85,192,107,288,149.3C384,192,480,256,576,266.7C672,277,768,235,864,197.3C960,160,1056,128,1152,144C1248,160,1344,224,1392,256L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-            </path>
-        </svg>
-        </path>
-        </svg>
-        <!-- CONTENU LANDING-PAGE -->
-        <div class="contentBox">
-            <h2>Arrive bientôt </h2>
-            <p>Sous le ciel de notre amour, une petite étoile est en train de naître
-Un souffle de tendresse grandit chaque jour dans nos cœurs.
-Entre Lauryne et Garoody, un doux secret se prépare à éclore.
-                <br>inscrivez-vous à notre
-                newsletter.
-            </p>
-
-            <!-- compteur de jours restant en javascript -->
-            <div class="countDown">
-                <div class="time">
-                    <div id="jour" class="day">220</div> <span>jours</span>
-                </div>
-                <div class="time">
-                    <div id="heure" class="hour">24</div> <span>heures</span>
-                </div>
-                <div class="time">
-                    <div id="minute" class="minute">220</div> <span>minutes</span>
+                <!-- Date fictive utilisée uniquement pour démontrer le compteur JavaScript. -->
+                <div class="arrival-counter" data-arrival-date="2026-01-01T00:00:00+01:00" aria-label="Compteur de démonstration">
+                    <div class="time-card">
+                        <span id="jour">00</span>
+                        <span>jours</span>
+                    </div>
+                    <div class="time-card">
+                        <span id="heure">00</span>
+                        <span>heures</span>
+                    </div>
+                    <div class="time-card">
+                        <span id="minute">00</span>
+                        <span>minutes</span>
+                    </div>
+                    <div class="time-card">
+                        <span id="seconde">00</span>
+                        <span>secondes</span>
+                    </div>
                 </div>
 
-                <div class="time">
-                    <div id="seconde" class="second">45</div> <span>Secondes</span>
-                </div>
+                <noscript>
+                    <p class="noscript-message">Activez JavaScript pour voir le compteur de démonstration.</p>
+                </noscript>
             </div>
-            <!-- Deuxième bouton call-to-action -->
-            <button class="btn show__newsletter" href="#"> Prévenez-moi!</button>
-        </div>
-        <!-- IMAGE du panda ramen -->
-        <div class="imgBox">
-            <img src="./img/section/femme2.jpg" alt="panda qui mange des ramens sur le ventre"
-            decoding="async"
-           sizes="(max-width: 768px) 300px, max-width: 1200px 1200px 1200px" 
-           srcset="./img/section/femme2.jpg 300w, ./img/section/femme2.jpg 992w,
-           ./img/section/femme2.jpg 1200px" >
 
-
-
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-     <section id="newsletter" class="newsletter">
-        <div class="newsletter__tittle">
-            <h2>Rester connectés</h2>
-            <p>Soyez informé du lancement</p>
-        </div>
-        <!-- Formulaire d'abonnement à la newsletter -->
-        <div class=" newsletter__form ">
-
-            <form action="https://api.wisepanda.fr/newsletter/subscribe" method="post" enctype="" aria-label="Formulaire d'inscription à la newsletter">
-                <label for="email">Votre adresse email</label>
-                <input type="email" id="email" name="email" placeholder="*votre@email.com" required aria-required="true" autocomplete="email">
-           <div class="consent-checkbox">
-            <input type="checkbox" name="consent" id="consent" required>
-            <label for="consent">j'accepte de recevoir la newsletter et j'ai lu la politique de confidentialité</label>
-           </div>
-           <button type="submit">M'abonner</button>
-            </form>
-
-
-
-        </div>
-        <!-- Politique de confidentialité RGPD -->
-        <div class="newsletter__policy">
-            <p>En renseignant votre adresse email, acceptez de recevoir chaque semaine nos articles de blog par courrier
-                électronique et vous prenez connaissance de notre <a href="#">Politique de confidentialité</a>.
-            </p>
-            <p>
-                Vous pouvez vous désinscrire à tout moment à l'aide des liens de désinscription ou en nous conctatant à
-                l'adresse policy@wisepanda.fr </p>
-
-        </div>
-        <!-- image pour la fermeture du formulaire -->
-    <button> <img class="close show__newsletter" src="./img/section/close.png" alt="ima ge fermeture formulaire"> </button>               
-    </div>
-
-   </section>
-
-
-
- </main>
-
-
-
-    <!-- FOOTER -->
+            <figure class="baby-photo">
+                <img src="./assets/images/bebe-endormi.jpg" alt="Bébé endormi, emmailloté dans une couverture claire" width="900" height="900" loading="eager" decoding="async">
+            </figure>
+        </section>
+    </main>
 
     <footer>
-        <div class="copy">Tous droits réservés &copy; <a href="#" target="_blank">hely@tam</a> | 2025-<span id="current_year"></span>
-        </div>
-
+        <p>
+            Projet personnel · <span id="current-year"></span>
+        </p>
     </footer>
 
-
-    <!-- MON SCRIPT JS -->
-
-    <script src="./assets/js/main.js">
-    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

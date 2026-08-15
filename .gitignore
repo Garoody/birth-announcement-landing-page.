@@ -1,5 +1,16 @@
-# Object file
-*.o
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Ada Library Information
-*.ali
+# Éditeur
+.vscode/*
+!.vscode/settings.json
+
+# Fichiers temporaires et journaux
+*.log
+*.tmp
+
+# Dépendances ou dossiers de génération éventuels
+node_modules/
+dist/
